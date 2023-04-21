@@ -1,0 +1,73 @@
+###
+POST http://localhost:3000/reservations
+Content-Type: application/json
+
+{
+    "startDate": "12-25-2022",
+    "endDate": "12-26-2023",
+    "placeId": "17",
+    "invoiceId": "2",
+    "charge":{
+        "amount": 15,
+        "card":{
+            "cvc": "413",
+            "exp_month": 12,
+            "exp_year": 2027,
+            "number": "4242 4242 4242 4242"
+        }
+    }
+}
+
+###
+GET http://localhost:3000/reservations/
+Content-Type: application/json
+
+###
+GET http://localhost:3000/reservations/6437f6e3e5aa29e0f1867d57
+Content-Type: application/json
+
+###
+PATCH http://localhost:3000/reservations/6437f6e3e5aa29e0f1867d57
+Content-Type: application/json
+
+{
+    "startDate": "12-25-2023",
+    "endDate": "12-26-2023",
+    "placeId": "17",
+    "invoiceId": "2"
+}
+
+###
+DELETE http://localhost:3000/reservations/6437f87b3846d370c962c8b0
+Content-Type: application/json
+
+{
+    "startDate": "12-25-2023",
+    "endDate": "12-26-2023",
+    "placeId": "17",
+    "invoiceId": "2"
+}
+
+
+###
+POST http://localhost:3001/users
+Content-Type: application/json
+
+{
+   "email": "ady.drozman2007@gmail.com",
+   "password": "T3st12345!"
+}
+
+###
+POST http://localhost:3001/auth/login
+Content-Type: application/json
+
+{
+   "email": "ady.drozman2007@gmail.com",
+   "password": "T3st12345!"
+}
+
+###
+GET http://localhost:3001/users
+
+Content-Type: application/json
