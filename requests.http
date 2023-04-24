@@ -38,7 +38,7 @@ Content-Type: application/json
 }
 
 ###
-DELETE http://localhost:3000/reservations/6437f87b3846d370c962c8b0
+DELETE http://localhost:3000/reservations/644634a7b37225ac1d9ab27f
 Content-Type: application/json
 
 {
@@ -54,7 +54,7 @@ POST http://localhost:3001/users
 Content-Type: application/json
 
 {
-   "email": "ady.drozman2007@gmail.com",
+   "email": "adytestare2@gmail.com",
    "password": "T3st12345!"
 }
 
@@ -63,7 +63,7 @@ POST http://localhost:3001/auth/login
 Content-Type: application/json
 
 {
-   "email": "ady.drozman2007@gmail.com",
+   "email": "adytestare2@gmail.com",
    "password": "T3st12345!"
 }
 

@@ -16,12 +16,12 @@ export class NotificationsService {
     }
   })
   constructor(private readonly configService: ConfigService) { }
-  async notifyEmail({ email }: NotifiyEmailDto) {
+  async notifyEmail({ email, text }: NotifiyEmailDto) {
     await this.transporter.sendMail({
       from: this.configService.get('SMTP_USER'),
       to: email,
       subject: 'Sleepr Notification',
-      text: 'Test text'
+      text,
     })
   }
 }
